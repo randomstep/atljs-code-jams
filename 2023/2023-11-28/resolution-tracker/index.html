@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Tracker</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div id="app">
+        <h1>Goal Tracker</h1>
+        <form id="goalForm">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="description" placeholder="Description" required>
+            <input type="number" id="targetValue" required>
+            <input type="text" id="unit" required>
+            <button type="submit" onclick="addGoal">Add Goal</button>
+        </form>
+        <div id="goalsList"></div>
+    </div>
+
+    <script src="goal.js"></script>
+    <script src="goalList.js"></script>
+</body>
+</html>
